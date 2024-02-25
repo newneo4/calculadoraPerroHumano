@@ -1,0 +1,310 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url('../img/fondo-animado-prueba.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 90%;/* Usamos vh (viewport height) para ocupar el 100% del viewport */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    height: 90%;
+    width: 40%; /* Ajusta el ancho según tus necesidades */
+    padding:20px; /* Agrega espacio alrededor del contenido */
+    background-color: rgb(171,85,52); /* Color de fondo para que resalte */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0 15px 15px rgb(149, 69, 42); /* Sombra suave */
+}
+
+hr{
+    border: none;
+    background-color: white;
+    height: 1px;
+}
+
+.principal {
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100%; /* Ocupar toda la altura del contenedor */
+    background-color: #a4d4b4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.principal>h1{
+    box-sizing: content-box;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #ca054d;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+
+.botones-principal {
+    display: flex;
+    align-items: center; /* Centra los botones horizontalmente */
+}
+
+.botones-principal input[type="button"] {
+    box-shadow: 5px 5px 0 0 #3b1d3d;
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    height: 60px; /* Ajusta la altura según tus necesidades */
+    margin-bottom: 10px; /* Espacio entre los botones */
+    background-color: #3b1c32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    transition: width 0.3s ease, height 0.3s ease; /* Transición suave en ancho y alto */
+
+}
+
+.botones-principal input[type="button"]:hover{
+    width: 160px;
+    height: 65px;
+}
+
+.formulario{
+    display: none;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    background-color: #a4d4b4;
+    border-radius: 10px;
+    border-left: 3px solid rgb(149, 69, 42);
+}
+
+
+#years-gato, #meses-gato, #years-canino, #meses-canino{
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+.perro{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parte-superior{
+    display: none;
+    width: 100%;
+    height: 60%;
+}
+
+.texto-perro{
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.texto-perro label{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.imagen-formulario-canino{
+    display: none;
+    flex: 3;
+    width: 50%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-formulario-canino img,
+.imagen-formulario-gatuno img {
+    flex: 3;
+    height: 100%;
+    object-fit:contain; /* Ajustar la imagen al tamaño del contenedor sin distorsionarla y recortando si es necesario */
+}
+
+.parte-inferior{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;      
+    gap: 70px;
+}
+
+.parte-inferior input[type="button"]{
+        box-shadow: 5px 5px 0 0 #3b1d3d;
+        width: 120px; /* Ajusta el ancho según tus necesidades */
+        height: 60px; /* Ajusta la altura según tus necesidades */
+        margin-bottom: 10px; /* Espacio entre los botones */
+        background-color: #3b1c32;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 30px;
+        transition: width 0.3s ease, height 0.3s ease; /* Transición suave en ancho y alto */
+}
+
+
+.parte-inferior input[type="button"]:hover{
+    width: 160px;
+    height: 65px;
+}
+
+#circulo, #circulo-gato {
+    width: 100px; /* Cambia el tamaño del círculo ajustando este valor */
+    height: 100px; /* Debe ser el mismo que el ancho para crear un círculo */
+    background-color: #3b1d3d; /* Cambia el color de fondo del círculo */
+    border-radius: 50%; /* Establece el radio para hacer el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cambia el color del texto */
+    font-size: 16px; /* Cambia el tamaño del texto */
+    text-align: center;
+}
+
+.gato{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parte-superior-gato{
+    display: none;
+    width: 100%;
+    height: 60%;
+}
+
+.texto-gato{
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.texto-gato label{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.imagen-formulario-gatuno{
+    display: none;
+    flex: 3;
+    width: 50%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-formulario-gatuno img {
+    flex: 3;
+    height: 100%;
+    object-fit: contain; /* Ajustar la imagen al tamaño del contenedor sin distorsionarla y recortando si es necesario */
+}
+
+.parte-inferior-gato{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;      
+    gap: 70px;
+}
+
+.parte-inferior-gato input[type="button"]{
+        box-shadow: 5px 5px 0 0 #3b1d3d;
+        width: 120px; /* Ajusta el ancho según tus necesidades */
+        height: 60px; /* Ajusta la altura según tus necesidades */
+        margin-bottom: 10px; /* Espacio entre los botones */
+        background-color: #3b1c32;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 30px;
+        transition: width 0.3s ease, height 0.3s ease; /* Transición suave en ancho y alto */
+}
+
+
+.parte-inferior-gato input[type="button"]:hover{
+    width: 160px;
+    height: 65px;
+}
+
+footer {
+    width: 100%;
+    height: 4%;
+    background-color:transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Ajusta el espacio interno del footer según sea necesario */
+}
+
+footer .imagen-footer {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+}
+
+footer .imagen-footer img{
+    width: 70px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+    height: 30px;
+}
+
+footer label {
+    margin: 0; /* Elimina el margen predeterminado del texto */
+    border: 2px solid #3b1c32;
+    background-color: #3b1c32;
+}

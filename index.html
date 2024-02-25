@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/logica.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="principal">
+                <h1>Bienvenido a la calculadora mascotita-humano</h1>
+                <div class="imagen-principal">
+                    <img src="img/imagen-principal.png" alt="Imagen principal" id="imagen-principal">
+                </div>
+                <div class="botones-principal">
+                    <input type="button" class="boton-perro" value="Perro" id="boton1" onclick="perro()">
+                    <input type="button" class="boton-gato" value="Gato" id="boton2" onclick="gato()">
+                </div>                
+            </div>
+            <div class="formulario">
+                <div class="perro">
+                    <div class="parte-superior">
+                        <div class="texto-perro">
+                            <label for="tamano-perro">Tamaño:
+                                <select name="tamano-perro" id="tamano-perro">
+                                    <option value="toy" selected>Toy</option>
+                                    <option value="pequeño">Pequeño</option>
+                                    <option value="mediano">Mediano</option>
+                                    <option value="grande">Grande</option>
+                                </select>
+                            </label>
+                            <hr>
+                            <div class="edad-canino">
+                                <label >Edad</label>
+                                <label for="years-canino">Años del canino: <input type="number" id="years-canino" min="0" max="20" /></label>
+                                <label for="meses-canino">Meses del canino: <input type="number" id="meses-canino" min="0" max="11" /></label>                                
+                            </div>
+                        </div>
+                        <div class="imagen-formulario-canino">
+                            <img src="img/formulario-perro.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="parte-inferior">
+                        <input type="button" value="Calcular" onclick="calcular_perro()">
+                        <label id="circulo">Resultado :</label>
+                    </div>
+                </div>
+                <div class="gato">
+                    <div class="parte-superior-gato">
+                        <div class="texto-gato">
+                            <label>Los gatos son igual de pachoncitos si los cuidas asi que su tamaño no importa</label>
+                            <div class="edad-gato">
+                                <label for="years-gato">Edad del gatuno: <input type="number" id="years-gato"></label>
+                                <label for="meses-gato">Meses del gatuno: <input type="number" id="meses-gato"></label>
+                            </div>
+                        </div>
+                        <div class="imagen-formulario-gatuno">
+                            <img src="img/formulario-gato.gif" alt="imagen-gato">
+                        </div>
+                    </div>
+                    <div class="parte-inferior-gato">
+                        <input type="button" value="Calcular" onclick="calcular_gato()">
+                        <label id="circulo-gato">Resultado :</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="imagen-footer">
+            <a href="https://github.com/newneo4" target="_blank">
+                <img src="img/logo.jpg" alt="GitHub">
+            </a>
+        </div>
+        <label>¿Quieres denunciarme o seguirme?, este es mi GitHub</label>
+    </footer>    
+</body>
+</html>
